@@ -30,6 +30,7 @@ body  {
 	/* font-family : ($WPFolio_body_font)  */
 	/* color: ($WPFolio_body_color)   */
 	padding: 5px; 
+	font-size: 12px;
 }
 
 .container { 
@@ -48,7 +49,6 @@ body  {
 	font-weight : normal;
 	text-align : left;
 	line-height: 1.4em;
-	font-size: 12px;
 	clear: both;
 	padding: 0;
 	margin: 30px 30px 5px;
@@ -65,14 +65,19 @@ h1,h2,h3,h4,h5,h6,form,fieldset {
 h1 { 
 	/*font-size: ($WPFolio_headline_size)  */}
 h2 { 
-	/*color: (WPFolio_highlight_color)  */ 
+	/*color: (WPFolio_highlight_color) */ 
+	font-size: 1.5em;
 }
 h3 {
 	/*color: ($WPFolio_highlight_color)  */
+	font-size: 1.3em;
 }
 h4 {
-	/*color: ($WPFolio_second_color)  */
 }
+h5 {
+	font-size: 1em;
+}
+
 .low {
 	display:none;
 }
@@ -147,6 +152,7 @@ div#header    {
 }
 
 #header h4{
+	font-size: 1.6em;
 	padding-top: .15em;
 	font-weight: normal;
 	font-style: normal;}
@@ -162,7 +168,7 @@ div#header    {
 
 div.entry {
 	padding : 0px;
-	font-size : 11px;
+	font-size : 1em;
 	clear:both;
 	margin: 0px auto 20px;
 }
@@ -177,14 +183,14 @@ div.entry.notblog p {
 	margin-left : auto;
 	margin-right : auto;
 	padding : 0px;
-	font-size : 11px;
+	font-size : 1em;
 	font-weight : normal;
 	line-height : 16px;
 	text-align : center;
 	}
 .entrycat a {
 	text-align: center; 
-	padding: 10px;
+	padding: .85em;
 	font-weight: normal;
 	font-style: normal;
 }
@@ -294,7 +300,7 @@ margin: 1em auto; /*this might need to be removed*/
 	text-decoration : none;
 	padding : 3px;
 	text-align : left;
-	font-size: 11px;
+	font-size: 1em;
 	margin: 0px 30px 30px;
 }
 .prevnext a, link  {  
@@ -346,7 +352,7 @@ div.nav {
 /*** SUPERFISH SKIN ***/
 .sf-menu {
 	float:			left;
-	font-size: .8em;
+	font-size: 1em;
 }
 
 .sf-menu li a {
@@ -428,7 +434,7 @@ div.notable-post {
 
 h2.post-title a{
 	text-align: left;
-	font-size: 1.2em;
+	font-size: 1.4em;
 	font-weight: normal;
 	font-style: normal;
 	padding: 0;
@@ -453,6 +459,7 @@ div.notable-post h3 a, link {
 }
 
 div.notable-post h4 {
+	font-size: 1.2em;
 	margin-bottom: 1em;
 	font-weight: normal;
 	font-style: normal;
@@ -473,19 +480,19 @@ div.notable-post a {
 
 #sidebar { 
 	/* color: ($WPFolio_highlight_color) */
-	font-size : 12px;
+	font-size : 1em;
 	font-weight : normal;
 	text-align : left;
 	list-style:none;
 	width: 240px;
 	float: right;
-	margin-top: 12px;
+	margin-top: 1em;
 	line-height: 1.5em;
 }
 
 #sidebar h2.widgettitle {
 	padding: 0;
-	font-size: 12px;
+	font-size: 1em;
 	margin-bottom: .5em;
 	text-align: center;
 	font-weight: normal;
@@ -550,7 +557,7 @@ ol.commentlist ul {
 
 .footer {
 	text-align : left;
-	font-size : 11px; 
+	font-size : .7em; 
 	clear: both;
 	border-bottom-left-radius: 10px;
 	-moz-border-radius-bottomleft: 10px;
@@ -585,7 +592,7 @@ float: right;
 }
 .gallery-item {
 	float: left;
-	margin-top: 10px;
+	margin-top: .85em;
 	text-align: center;
 	width: 33%;
 }
@@ -607,7 +614,7 @@ float: right;
 .edit-link a.post-edit-link {
 	background-color:red;
 	color: #FFFFFF;
-	font-size: 12px;
+	font-size: 1em;
 	font-weight: normal;
 	padding: .5em .8em 2px .5em;
 }
@@ -616,12 +623,12 @@ float: right;
 /* @end */
 
 .post-bottom-title {  
-	margin-top : 5px;
+	margin-top : .33em;
 	margin-bottom : 0px;
 	margin-left : 30px;
 	margin-right : 30px;
 	text-align : center;
-	font-size : 11px;
+	font-size : 1em;
 }
 
 .Page.not.found p {
@@ -635,11 +642,11 @@ code {
 
 .info {     
 	margin-top : 0px;
-	margin-bottom : 5px;
-	margin-left : 10px;
-	margin-right : 10px;
-	padding : 5px;
-	font-size : 12px;
+	margin-bottom : .5em;
+	margin-left : 2em;
+	margin-right : 2em;
+	padding : .5em;
+	font-size : 1.2em;
 	font-weight : normal;
 	text-align : justify;
 	}
