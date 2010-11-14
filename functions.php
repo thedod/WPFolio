@@ -55,8 +55,14 @@ add_filter( 'gallery_style', 'wpfolio_remove_gallery_css' );
 // END - Remove inline styles on gallery shortcode
 
 // enqueue jQuery
+//if you have a script that need jquery ... you don't need to call'it. You just have to put it in your dependancies.
+//wp_enqueue_script('jquery');
 
-wp_enqueue_script('jquery');
+wp_enqueue_script('hoverIntent', get_bloginfo('template_directory').'/js/hoverIntent.js',array('jquery'));
+wp_enqueue_script('superfish', get_bloginfo('template_directory').'/js/superfish.js',array('hoverIntent'));
+wp_enqueue_script('supersubs', get_bloginfo('template_directory').'/js/supersubs.js',array('superfish'));
+wp_enqueue_script('wpfolio', get_bloginfo('template_directory').'/js/wpfolio.js',array('supersubs'));
+
 
 // enable threaded comments
 
@@ -496,10 +502,9 @@ function wpfolio_add_admin() {
 
 function mytheme_admin() {
 global $themename, $shortname, $options;
-define('saved');
-define('reset');
-if ( $_REQUEST['saved'] ) echo '<div id="message" class="updated fade"><p><strong>'.$themename.' settings saved.</strong></p></div>';
-    if ( $_REQUEST['reset'] ) echo '<div id="message" class="updated fade"><p><strong>'.$themename.' settings reset.</strong></p></div>';?>
+
+if ( $_GET['saved'] ) echo '<div id="message" class="updated fade"><p><strong>'.$themename.' settings saved.</strong></p></div>';
+    if ( $_GET['reset'] ) echo '<div id="message" class="updated fade"><p><strong>'.$themename.' settings reset.</strong></p></div>';?>
 
 
 <!-- WPFolio Theme Interface -->
@@ -680,7 +685,7 @@ function wp_folio_css(){
 			}
 		
 		body, .container, .container p, #content, div.notable-post {
-			color: <?php echo $WPFolio_body_color; ?> ;
+			color: #<?php echo $WPFolio_body_color; ?> ;
 			
 			}
 		

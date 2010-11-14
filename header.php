@@ -27,23 +27,10 @@
 
 
 <!-- Superfish Support -->
-
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/superfish.css" type="text/css" media="screen"/>
-
 <!--
 Add if you want to enable the SuperFish Navbar. It will need styling! 
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/superfish-navbar.css" type="text/css" media="screen"/> -->
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/hoverIntent.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/superfish.js" type="text/javascript"></script>
-<script language="javascript" type="text/javascript" src="<?php echo bloginfo('template_directory') ?>/js/supersubs.js"></script>
-<script type="text/javascript">
-/* <![CDATA[ */
-jQuery(document).ready(function($) {
-$('ul.sf-menu').superfish();
-});
-/* ]]> */
-</script>
-
 <!-- end superfish -->
 
 <!--[if IE]>
